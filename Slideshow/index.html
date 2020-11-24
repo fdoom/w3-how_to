@@ -6,38 +6,38 @@
 </head>
 
 <body>
-  <script type = "text/javascript" src = "script.js"></script>
   <div class = "slideshow-container">
-    <div class = "mySlides">
+    <div class = "mySlides fade">
       <div class = "numbertext">1 / 3</div>
       <img src = "dog.jpg" style = "width: 100%">
-      <div class = "text">Caption Text</div>
+      <div class = "text">Dog</div>
     </div>
 
-    <div class = "mySlides">
+    <div class = "mySlides fade">
       <div class = "numbertext">2 / 3</div>
       <img src = "cat.jpg" style = "width: 100%">
-      <div class = "text">Caption Text</div>
+      <div class = "text">Cat</div>
     </div>
 
-    <div class = "">
+    <div class = "mySlides fade">
       <div class = "numbertext">3 / 3</div>
       <img src = "fox.jpg" style = "width: 100%">
-      <div class = "text">Caption Text</div>
+      <div class = "text">Fox</div>
     </div>
-  </div>
-
-  <!--Union code = '<' -->
-  <a class = "prev">&#10094</a>
+    <!--Union code = '<' -->
+    <a class = "prev" onclick = "plusSlides(-1)">&#10094</a>
+    
+    <!--Union code = '>' -->
+    <a class="next" onclick = "plusSlides(1)">&#10095</a>
   
-  <!--Union code = '>' -->
-  <a class="next">&#10095</a>
-  
-  <div>
-    <span class = "dot"></span>
-    <span class = "dot"></span>
-    <span class = "dot"></span>
   </div>
+  
+  <div class = dots>
+    <span class = "dot" onclick = "currentSlide(1)"></span>
+    <span class = "dot" onclick = "currentSlide(2)"></span>
+    <span class = "dot" onclick = "currentSlide(3)"></span>
+  </div>
+  <script type = "text/javascript" src = "script.js"></script>
 </body>
 <footer>
 
