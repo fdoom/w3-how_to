@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+.icon_bar{
+    width: 100%;
+    background-color: #555555;
+    overflow: auto;
+}
+
+.icon_bar a{
+    text-align: center;
+    float: left;
+    width: 20%;
+    padding: 12px 0px;
+    transition: 0.5s;
+    color: white;
+    font-size: 36px;
+}
+
+.icon_bar a:hover{
+    background-color: black;
+}
+
+.active{
+    background-color: #4CAF50;
+}
