@@ -1,0 +1,37 @@
+.accordion{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover{
+    background-color: #ccc;
+}
+
+.panel{
+    /* padding 양옆: 0, 위아래: 18px */
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+
+    /*요소의 콘텐츠가 너무 커서 요소의 블록 서식 맥락에 맞출 수 없을 때의 처리법을 지정하는 키워드이다.*/
+    overflow: hidden;
+}
+
+.accordion::after{
+    content: '\02795'; /*유니코드 문자*/
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active::after{
+    content: "\2796";
+}
